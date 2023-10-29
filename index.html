@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">Bookmark Manager</div>
+        </nav>
+    </header>
+
+    <div id="bookmark-manager">
+        <!-- Categories and bookmarks will be displayed here -->
+    </div>
+
+    <button id="add-bookmark-button">Add Bookmark</button>
+    <button id="delete-all-button">Delete All</button>
+
+    <div id="add-bookmark-modal" style="display: none;">
+        <form id="bookmark-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" required maxlength="30"><br>
+
+            <label for="url">URL:</label>
+            <input type="url" id="url" required><br>
+
+            <label for="category">Category:</label>
+            <select id="category" required>
+                <option value="">Select Category</option>
+            </select>
+            <button id="new-category-button">+</button>
+            <input type="text" id="new-category-name" style="display: none" required><br>
+
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            &copy; 2023 Bookmark Manager | Designed by Md. Shajibul Islam
+        </div>
+        <button id="contact-button">Contact Us</button>
+    </footer>
+
+    <div id="contact-page" style="display: none;">
+        <h1>Contact Us</h1>
+        <p>Feel free to reach out to us for any inquiries or feedback.</p>
+        <p>Email: contact@bookmarkmanager.com</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
